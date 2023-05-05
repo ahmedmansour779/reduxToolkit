@@ -1,14 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import Counter from './Counter';
-import store from './create slice/CreateSlice';
+import store from './create slice';
 
 function App() {
     return (
-        <div className='container-fluid'>
+        <div className='container'>
             <Provider store={store}>
                 <Counter />
-            </Provider>
+            </Provider><hr />
         </div>
     )
 }
